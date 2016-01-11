@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <TextureAsset>car_blue_small_1.png</TextureAsset>
+  <TopSpeed>400</TopSpeed>
+  <Acceleration>300</Acceleration>
+  <Braking>250</Braking>
+  <Handling>1.5</Handling>
+</Root>
