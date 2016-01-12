@@ -47,7 +47,7 @@ void Lesson2RacetrackScreen::LoadLevel()
 
   for (const Vector2& position : GetTrackPoints())
   {
-    std::string dataAsset = position.x < 1250 ? "rightTurn.png" : "leftTurn.png";
+    std::string dataAsset = position.x < 1250 ? "ClockwiseRightTurn.png" : "AntiClockwiseLeftTurn.png";
     Image* arrow = new Image(position, dataAsset);
     arrow->SetShouldHaveCollider(false);
     m_arrows.push_back(arrow);

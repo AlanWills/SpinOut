@@ -17,9 +17,23 @@ CarData::~CarData()
 
 
 //-----------------------------------------------------------------------------------------------------------------------------------
+const char* CarData::GetDisplayName() const
+{
+  return ConstGetDocument()->RootElement()->FirstChildElement("DisplayName")->GetText();
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------
 const char* CarData::GetTextureAsset() const
 {
   return ConstGetDocument()->RootElement()->FirstChildElement("TextureAsset")->GetText();
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+const char* CarData::GetDescription() const
+{
+  return ConstGetDocument()->RootElement()->FirstChildElement("Description")->GetText();
 }
 
 

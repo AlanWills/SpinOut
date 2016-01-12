@@ -177,6 +177,7 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Car.h" />
     <ClInclude Include="CarData.h" />
+    <ClInclude Include="CarDescriptionUI.h" />
     <ClInclude Include="CircleCollider.h" />
     <ClInclude Include="ClickableImage.h" />
     <ClInclude Include="Collider.h" />
@@ -185,6 +186,7 @@
     <ClInclude Include="GameMouse.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameplayScreen.h" />
+    <ClInclude Include="GarageScreen.h" />
     <ClInclude Include="GenericUtils.h" />
     <ClInclude Include="HUD.h" />
     <ClInclude Include="Image.h" />
@@ -240,6 +242,7 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="CarData.cpp" />
+    <ClCompile Include="CarDescriptionUI.cpp" />
     <ClCompile Include="CircleCollider.cpp" />
     <ClCompile Include="ClickableImage.cpp" />
     <ClCompile Include="Collider.cpp" />
@@ -248,6 +251,7 @@
     <ClCompile Include="GameMouse.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameplayScreen.cpp" />
+    <ClCompile Include="GarageScreen.cpp" />
     <ClCompile Include="GenericUtils.cpp" />
     <ClCompile Include="HUD.cpp" />
     <ClCompile Include="Image.cpp" />
@@ -322,10 +326,12 @@
     <Image Include="DialogBox.png" />
     <Image Include="directx.ico" />
     <Image Include="EmptyBackground.png" />
+    <Image Include="AntiClockwiseRightTurn.png" />
+    <Image Include="ClockwiseLeftTurn.png" />
     <Image Include="GreenBackground.png" />
     <Image Include="GridLine.png" />
     <Image Include="land_grass11.png" />
-    <Image Include="leftTurn.png" />
+    <Image Include="AntiClockwiseLeftTurn.png" />
     <Image Include="Level1.png" />
     <Image Include="Lesson1Thumbnail.png" />
     <Image Include="lights.png" />
@@ -333,7 +339,7 @@
     <Image Include="light_yellow.png" />
     <Image Include="Marker.png" />
     <Image Include="oil.png" />
-    <Image Include="rightTurn.png" />
+    <Image Include="ClockwiseRightTurn.png" />
     <Image Include="road_asphalt1.png" />
     <Image Include="road_asphalt10.png" />
     <Image Include="road_asphalt11.png" />
@@ -455,6 +461,7 @@
     <Xml Include="ChooseDrivingLessonScreen.xml" />
     <Xml Include="Corvette.xml" />
     <Xml Include="DrivingLessonScreen.xml" />
+    <Xml Include="GarageScreen.xml" />
     <Xml Include="Lesson1RacetrackScreen.xml" />
     <Xml Include="Lesson2RacetrackScreen.xml" />
     <Xml Include="LevelDesignScreen.xml" />

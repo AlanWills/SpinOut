@@ -190,6 +190,12 @@
     <Filter Include="Header Files\Screens\Lessons">
       <UniqueIdentifier>{2e3863a8-6e51-4fbb-8ce0-7ea63e75b51b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Screens\Menus">
+      <UniqueIdentifier>{23300eaf-07fb-480b-982c-eff1ab61277c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens\Menus">
+      <UniqueIdentifier>{43c1ae6b-221f-4bd1-bdda-7cda2b1d26cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -233,9 +239,6 @@
     </ClInclude>
     <ClInclude Include="KeyboardInput.h">
       <Filter>Header Files\Extra Components\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="MainMenuScreen.h">
-      <Filter>Header Files\Screens</Filter>
     </ClInclude>
     <ClInclude Include="MathUtils.h">
       <Filter>Header Files\Utils</Filter>
@@ -318,9 +321,6 @@
     <ClInclude Include="PlayerData.h">
       <Filter>Header Files\Data</Filter>
     </ClInclude>
-    <ClInclude Include="ChooseDrivingLessonScreen.h">
-      <Filter>Header Files\Screens</Filter>
-    </ClInclude>
     <ClInclude Include="RacetrackScreenData.h">
       <Filter>Header Files\Data\Screens</Filter>
     </ClInclude>
@@ -378,6 +378,18 @@
     <ClInclude Include="Lesson3RacetrackScreen.h">
       <Filter>Header Files\Screens\Lessons</Filter>
     </ClInclude>
+    <ClInclude Include="ChooseDrivingLessonScreen.h">
+      <Filter>Header Files\Screens\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuScreen.h">
+      <Filter>Header Files\Screens\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="GarageScreen.h">
+      <Filter>Header Files\Screens\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="CarDescriptionUI.h">
+      <Filter>Header Files\UI\Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -433,9 +445,6 @@
     </ClCompile>
     <ClCompile Include="ScriptManager.cpp">
       <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="MainMenuScreen.cpp">
-      <Filter>Source Files\Screens</Filter>
     </ClCompile>
     <ClCompile Include="Texture2D.cpp">
       <Filter>Source Files\Data</Filter>
@@ -500,9 +509,6 @@
     <ClCompile Include="PlayerData.cpp">
       <Filter>Source Files\Data</Filter>
     </ClCompile>
-    <ClCompile Include="ChooseDrivingLessonScreen.cpp">
-      <Filter>Source Files\Screens</Filter>
-    </ClCompile>
     <ClCompile Include="RacetrackScreenData.cpp">
       <Filter>Source Files\Data\Screens</Filter>
     </ClCompile>
@@ -559,6 +565,18 @@
     </ClCompile>
     <ClCompile Include="Lesson3RacetrackScreen.cpp">
       <Filter>Source Files\Screens\Lessons</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseDrivingLessonScreen.cpp">
+      <Filter>Source Files\Screens\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuScreen.cpp">
+      <Filter>Source Files\Screens\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="GarageScreen.cpp">
+      <Filter>Source Files\Screens\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="CarDescriptionUI.cpp">
+      <Filter>Source Files\UI\Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -990,10 +1008,16 @@
     <Image Include="Lesson1Thumbnail.png">
       <Filter>Resource Files\Sprites\Racetrack Thumbnails</Filter>
     </Image>
-    <Image Include="rightTurn.png">
+    <Image Include="AntiClockwiseLeftTurn.png">
       <Filter>Resource Files\Sprites\UI</Filter>
     </Image>
-    <Image Include="leftTurn.png">
+    <Image Include="ClockwiseRightTurn.png">
+      <Filter>Resource Files\Sprites\UI</Filter>
+    </Image>
+    <Image Include="AntiClockwiseRightTurn.png">
+      <Filter>Resource Files\Sprites\UI</Filter>
+    </Image>
+    <Image Include="ClockwiseLeftTurn.png">
       <Filter>Resource Files\Sprites\UI</Filter>
     </Image>
   </ItemGroup>
@@ -1026,6 +1050,9 @@
     </Xml>
     <Xml Include="Lesson1RacetrackScreen.xml">
       <Filter>Resource Files\Data\Tracks\Lessons</Filter>
+    </Xml>
+    <Xml Include="GarageScreen.xml">
+      <Filter>Resource Files\Data\Screens</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>

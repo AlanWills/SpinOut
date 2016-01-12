@@ -2,6 +2,7 @@
 
 #include "MainMenuScreen.h"
 #include "ChooseDrivingLessonScreen.h"
+#include "GarageScreen.h"
 
 #include "AddTextBoxScript.h"
 
@@ -48,11 +49,12 @@ void MainMenuScreen::AddInitialUI()
   garageButton->SetClickFunction([this]()
   {
     // Transition to garage screen
+    Transition(new GarageScreen(GetScreenManager(), "GarageScreen.xml"));
   });
 
-  AddScreenUIObject(tutorialButton);
+  AddScreenUIObject(garageButton);
 
-  Button* exitButton = new Button(Vector2(0, 11), L"Quit", "Button.png", BaseObject::kTexture, garageButton);
+  Button* exitButton = new Button(Vector2(0, 100), L"Quit", "Button.png", BaseObject::kTexture, garageButton);
   exitButton->SetClickFunction([this]()
   {
     PostQuitMessage(0);

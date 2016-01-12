@@ -2,7 +2,7 @@
 
 #include "PlayerData.h"
 
-#include"ScreenManager.h"
+#include "ScreenManager.h"
 #include "RacetrackScreenFactory.h"
 
 #include "ChooseDrivingLessonScreen.h"
@@ -48,14 +48,11 @@ void ChooseDrivingLessonScreen::AddInitialUI()
 
 
 //-----------------------------------------------------------------------------------------------------------------------------------
-void ChooseDrivingLessonScreen::Begin()
+void ChooseDrivingLessonScreen::Initialize()
 {
-  BaseScreen::Begin();
+  BaseScreen::Initialize();
 
-  if (IsActive())
-  {
-    ShowCurrentLessonUI();
-  }
+  ShowCurrentLessonUI();
 }
 
 

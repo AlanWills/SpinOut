@@ -3,7 +3,6 @@
 #include "BaseScreen.h"
 
 #include "RacetrackScreenData.h"
-
 #include "RacetrackDescriptionUI.h"
 
 class ChooseDrivingLessonScreen : public BaseScreen
@@ -13,7 +12,7 @@ public:
   ~ChooseDrivingLessonScreen();
 
   void AddInitialUI() override;
-  void Begin() override;
+  void Initialize() override;
   void HandleInput(float elapsedGameTime) override;
 
 private:
